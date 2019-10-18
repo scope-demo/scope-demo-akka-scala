@@ -4,7 +4,7 @@ version := "0.1"
 
 scalaVersion := "2.12.10"
 
-//resolvers += Resolver.mavenLocal
+resolvers += Resolver.mavenLocal
 
 libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.5.25"
 libraryDependencies += "com.squareup.okhttp3" % "okhttp" % "3.14.3"
@@ -18,5 +18,5 @@ lazy val distProject = project
   .in(file("."))
   .enablePlugins(JavaAgent)
   .settings(
-    javaAgents += "com.undefinedlabs.scope" % "scope-agent" % "0.1.10-beta.6" % "test"
+    javaAgents += "com.undefinedlabs.scope" % "scope-agent" % "0.2.1-beta.4" % "test"
   )
