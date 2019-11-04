@@ -18,5 +18,5 @@ lazy val distProject = project
   .in(file("."))
   .enablePlugins(JavaAgent)
   .settings(
-    javaAgents += "com.undefinedlabs.scope" % "scope-agent" % "0.2.1-beta.6" % "test"
+    javaAgents += "com.undefinedlabs.scope" % "scope-agent" % "0.2.1" % "test"
   )
